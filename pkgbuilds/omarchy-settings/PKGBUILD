@@ -11,9 +11,9 @@
 #    omarchy-settings must always carry identical _tag/_commit/pkgver/sha256sums.
 pkgname='omarchy-settings'
 _tag=''
-_commit='7cc9057413246891536d2d2694eb0d4512352e10'
-pkgver=4.0.3rc1
-pkgrel=2
+_commit='15b4928e11f437cceea37a0b54a3774dd73ec99b'
+pkgver=4.0.3rc3
+pkgrel=1
 pkgdesc='Omarchy user defaults, /etc/skel content, fonts, plymouth theme, and support helpers'
 # Arch-specific because the shipped /etc tree is not the same on every
 # architecture: the Limine, mkinitcpio, zram and oomd drop-ins belong to the
@@ -124,7 +124,7 @@ if [[ -n "${OMARCHY_SRC:-}" ]]; then
   sha256sums=()
 else
   source=("omarchy::git+https://github.com/basecamp/omarchy.git#commit=${_commit}")
-  sha256sums=('0916fdf16de7a469d00115c056a8712d826e3d8e27bb65d08f6749e6f110eee0')
+  sha256sums=('d93881e674b1254be4384b4bb6ac9a117190d52a21d06377f0dbf72de9329984')
 fi
 
 prepare() {
